@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #282828;
+    font-family: 'Titillium Web', sans-serif;
+    color: #fff;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: 150px;
+    color: #fff;
+}
+
+.portfolio__image {
+    height: 100%;
+    width: auto;
+}
+
+.user__details {
+    background-color: #282828;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px 15px;
+    flex-grow: 2;
+}
+
+.user__details h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.user__details span {
+    margin: 0;
+    display: inline-block;
+}
+
+.page__links {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    flex-grow: 1;
+}
+
+.home,
+.projects,
+.contact {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    flex-grow: 1;
+    text-decoration: none;
+    color: #fff;
+}
+
+.home .fas,
+.projects .fas,
+.contact .fas {
+    padding-right: 10px;
+    font-size: 30px;
+}
+
