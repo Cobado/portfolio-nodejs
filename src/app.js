@@ -9,18 +9,11 @@ app.use(express.static(publicDirectoryPath));
 app.set('view engine', 'hbs');
 
 app.get('/', function (req, res) {
-    res.render('index', {
-        title: "Home",
-        name: "Ruslan"
-    });
+    res.render('index');
 })
 
-app.get('/about', function (req, res) {
-    res.send('<h1>Hello World from About Page</h1>');
-})
-
-app.get('/projects', function (req, res) {
-    res.send('<h1>Hello World from Projects Page</h1>');
+app.get('/project', function (req, res) {
+    res.render('project');
 })
 
 app.listen(3000, () => {
